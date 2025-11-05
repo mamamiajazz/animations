@@ -6,3 +6,106 @@
     flex-wrap: wrap;
     gap: 10px;
 }
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+img {
+    animation: spin 1s;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(100px);
+    }
+    66% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#bear:active {
+    animation: move 800ms;
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 100;
+    }
+    50% {
+        opacity: 50;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#elephant:active {
+    animation: disappear 700ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dance {
+     0% {
+        transform: rotate(0deg) translateY(0px);;
+    }
+    50% {
+        transform: rotate(180deg) translateY(100px);
+    }
+
+    100% {
+        transform: rotate(0deg) translateY(0px);
+    }
+}
+
+#giraffe:active {
+    animation: dance 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jump {
+     0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#hippo:active {
+    animation: jump 700ms;
+}
+
+@keyframes flip {
+     0% {
+        transform: rotate(0deg) translateY(0px);;
+    }
+    50% {
+        transform: rotate(360deg) translateY(100px);
+    }
+
+    100% {
+        transform: rotate(360deg) translateY(0px);
+    }
+}
+
+#tiger:active {
+    animation: flip 700ms;
+    animation-iteration-count: infinite;
+}
