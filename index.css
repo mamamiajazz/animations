@@ -90,6 +90,7 @@ img {
 
 #hippo:active {
     animation: jump 700ms;
+    animation-iteration-count: infinite;
 }
 
 @keyframes flip {
